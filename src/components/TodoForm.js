@@ -29,7 +29,9 @@ export const TodoForm = () => {
           <p className="form__title">Personal</p>
         </label>
       </div>
-      <button type="submit" className="todo-btn"></button>
+      <button type="submit" className="todo-btn">
+        Add todo
+      </button>
     </form>
   );
 };

@@ -37,9 +37,9 @@ h1 {
 
 .main__subtitle {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.1rem;
   color: #7f8487;
-  margin-bottom: 10px;
+  margin-bottom: 0.6rem;
 }
 
 .TodoForm {
@@ -53,7 +53,7 @@ h1 {
   background-color: #fff;
   border: none;
   outline: none;
-  border-radius: 10px;
+  border-radius: 0.6rem;
   padding-left: 0.8rem;
   font-weight: 500;
   font-size: 1rem;
@@ -80,4 +80,16 @@ h1 {
 }
 
 .form__personal {
+}
+
+.todo-btn {
+  width: 43rem;
+  height: 3rem;
+  color: #fff;
+  font-size: 1.1rem;
+  background-color: #764af1;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  margin: 1.1rem 0 1rem 0;
 }
