@@ -6,3 +6,78 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: #cfd2cf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #0b132a;
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.username {
+  outline: none;
+  padding-right: 200px;
+}
+
+.main__title {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 25px;
+  padding-bottom: 10px;
+  color: #73777b;
+}
+
+.main__subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  color: #7f8487;
+  margin-bottom: 10px;
+}
+
+.TodoForm {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  width: 43rem;
+  height: 3rem;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding-left: 0.8rem;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #0b132a;
+  margin-bottom: 1rem;
+}
+
+.category-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.todo-category {
+  width: 20rem;
+  height: 6.25rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form__personal {
+}

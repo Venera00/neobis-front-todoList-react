@@ -3,11 +3,7 @@ import React from "react";
 export const TodoForm = () => {
   return (
     <form className="TodoForm">
-      <input
-        type="text"
-        className="todo-input"
-        placeholder="e.g. get  a milk"
-      />
+      <input type="text" className="todo-input" placeholder="e.g. get a milk" />
 
       <div className="category-wrapper">
         <label className="todo-category">
