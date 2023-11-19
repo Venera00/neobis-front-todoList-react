@@ -29,7 +29,6 @@ export const TodoForm = ({ addTodo }) => {
             value="business"
             className="form__business"
             onChange={(e) => setCategory(e.target.value)}
-            checked={category === "business"}
           />
           <span className="checkmark business"></span>
           <p className="form__title">Business</p>
@@ -42,7 +41,6 @@ export const TodoForm = ({ addTodo }) => {
             value="personal"
             className="form__personal"
             onChange={(e) => setCategory(e.target.value)}
-            checked={category === "personal"}
           />
           <span className="checkmark personal"></span>
           <p className="form__title">Personal</p>
