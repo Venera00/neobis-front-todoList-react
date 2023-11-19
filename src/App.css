@@ -93,3 +93,42 @@ h1 {
   cursor: pointer;
   margin: 1.1rem 0 1rem 0;
 }
+
+.Todo {
+  width: 43rem;
+  height: 3.5rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.todo__btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-right: 0.6rem;
+}
+
+.btn-edit,
+.btn-delete {
+  height: 2.5rem;
+  width: 4rem;
+  border: none;
+  border-radius: 0.6rem;
+  color: #fff;
+  font-weight: 400;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.btn-edit {
+  background-color: #c7d36f;
+}
+
+.btn-delete {
+  background-color: #eb1d36;
+}
