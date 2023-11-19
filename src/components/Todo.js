@@ -2,6 +2,7 @@ import React from "react";
 
 export const Todo = ({ task, toggleComplete }) => {
   const categoryClass = task.category === "business" ? "business" : "personal";
+
   return (
     <div className={`Todo ${categoryClass}`}>
       <label className={`category ${task.category}`}>
