@@ -202,3 +202,34 @@ h1 {
   text-decoration: line-through;
   cursor: pointer;
 }
+
+.EditTodoForm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.edit-input {
+  width: 38.5rem;
+  height: 3rem;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 0.6rem;
+  padding-left: 0.8rem;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #0b132a;
+  margin-bottom: 1rem;
+}
+
+.upd-btn {
+  height: 3rem;
+  width: 4.5rem;
+  color: #fff;
+  font-size: 0.9rem;
+  background-color: #c7d36f;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+}

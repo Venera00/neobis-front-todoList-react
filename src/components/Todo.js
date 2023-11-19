@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Todo = ({ task, toggleComplete, deleteTodo }) => {
+export const Todo = ({ task, toggleComplete, deleteTodo, editTodo }) => {
   const categoryClass = task.category === "business" ? "business" : "personal";
 
   return (
@@ -22,7 +22,9 @@ export const Todo = ({ task, toggleComplete, deleteTodo }) => {
       </label>
 
       <div className="todo__btns">
-        <button className="btn-edit">Edit</button>
+        <button className="btn-edit" onClick={() => editTodo(task.id)}>
+          Edit
+        </button>
         <button className="btn-delete" onClick={() => deleteTodo(task.id)}>
           Delete
         </button>
