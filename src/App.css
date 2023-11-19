@@ -133,6 +133,48 @@ h1 {
   background-color: #eb1d36;
 }
 
+.form__business,
+.form__personal {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: none;
+}
+
+.checkmark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background-color: #fff;
+  border: 2px solid #f56d91;
+  border-radius: 50%;
+}
+
+.business {
+  border: 2px solid #764af1;
+}
+
+.checkmark::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+}
+
+.business::after {
+  background-color: #764af1;
+}
+
+.personal::after {
+  background-color: #f56d91;
+}
+
+.todo-category input:checked + .checkmark:after {
+  width: 20px;
+  height: 20px;
+}
+
 .completed {
   color: #c5aeff;
   text-decoration: line-through;
