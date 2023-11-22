@@ -2,6 +2,11 @@ import React, { useState } from "react";
 
 export const TodoForm = ({ addTodo }) => {
   const [value, setValue] = useState("");
+  const [category, setCategory] = useState("personal");
+
+  const handleCategory = (e) => {
+    setCategory(e.target.value);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -27,6 +32,8 @@ export const TodoForm = ({ addTodo }) => {
             name="category"
             value="business"
             className="form__business"
+            onChange={handleCategory}
+            checked={category === "business"}
           />
           <span className="checkmark business"></span>
           <p className="form__title">Business</p>
@@ -38,7 +45,8 @@ export const TodoForm = ({ addTodo }) => {
             name="category"
             value="personal"
             className="form__personal"
-            checked
+            onChange={handleCategory}
+            checked={category === "personal"}
           />
           <span className="checkmark personal"></span>
           <p className="form__title">Personal</p>

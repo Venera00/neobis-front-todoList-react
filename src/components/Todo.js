@@ -1,22 +1,22 @@
 import React from "react";
 
-export const Todo = ({ task, toggleComplete, deleteTodo, editTodo }) => {
+export const Todo = ({
+  task,
+  toggleComplete,
+  deleteTodo,
+  editTodo,
+  category,
+}) => {
   const categoryClass = task.category === "business" ? "business" : "personal";
 
   return (
-    <div className={`Todo ${categoryClass}`}>
+    <div className={`Todo`}>
       <label className={`category ${task.category}`}>
-        <input
-          type="checkbox"
-          className={`form__${task.category} ${
-            task.completed ? "completed" : ""
-          }`}
-        />
-        <span className={`checkmark ${categoryClass}`}></span>
-        <span
-          onClick={() => toggleComplete(task.id)}
-          className={`${task.completed ? "completed" : ""}`}
-        >
+        <div className="todo-checkbox">
+          <input type="checkbox" onClick={() => toggleComplete(task.id)} />
+        </div>
+        <span className={`checkmark ${category} ${categoryClass}`}></span>
+        <span className={`${task.completed ? "completed" : ""}`}>
           {task.task}
         </span>
       </label>
